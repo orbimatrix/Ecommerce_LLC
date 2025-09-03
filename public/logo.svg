@@ -1,0 +1,12 @@
+<svg width="240" height="80" viewBox="0 0 240 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with increased roundness -->
+  <rect width="240" height="80" rx="20" fill="#1E40AF"/>
+  
+  <!-- Company Name with larger font -->
+  <text x="25" y="32" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white">SHAHAN KHALID</text>
+  <text x="25" y="52" font-family="Arial, sans-serif" font-size="12" font-weight="normal" fill="#93C5FD">LLC</text>
+  
+  <!-- Decorative Element with increased size -->
+  <circle cx="190" cy="40" r="12" fill="#F59E0B"/>
+  <path d="M184 40 L190 32 L196 40 L190 48 Z" fill="white"/>
+</svg>
