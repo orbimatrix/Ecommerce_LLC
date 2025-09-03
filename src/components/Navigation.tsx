@@ -12,7 +12,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 sticky top-0 z-50">
+    <nav className="sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
         <div className="flex justify-between items-center h-20 rounded-2xl bg-white/10 backdrop-blur-sm px-6">
           {/* Logo */}
@@ -37,19 +37,19 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link 
                 href="/#services" 
-                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg"
+                className="text-gray-600 hover:text-gray-900 px-4 py-2 text-sm font-medium transition-all duration-200"
               >
                 Services
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg"
+                className="text-gray-600 hover:text-gray-900 px-4 py-2 text-sm font-medium transition-all duration-200"
               >
                 About
               </Link>
               <Link 
                 href="/contact" 
-                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg"
+                className="text-gray-600 hover:text-gray-900 px-4 py-2 text-sm font-medium transition-all duration-200"
               >
                 Contact
               </Link>
@@ -60,7 +60,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-all duration-200"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-all duration-200"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -80,24 +80,24 @@ export default function Navigation() {
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-4 pt-4 pb-4 space-y-2 sm:px-6 bg-white/90 backdrop-blur-md border-t border-white/20 rounded-b-2xl mx-2">
+            <div className="px-4 pt-4 pb-4 space-y-2 sm:px-6">
               <Link
                 href="/#services"
-                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 block px-4 py-3 text-base font-medium transition-all duration-200 rounded-lg"
+                className="text-gray-600 hover:text-gray-900 block px-4 py-3 text-base font-medium transition-all duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="/about"
-                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 block px-4 py-3 text-base font-medium transition-all duration-200 rounded-lg"
+                className="text-gray-600 hover:text-gray-900 block px-4 py-3 text-base font-medium transition-all duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 block px-4 py-3 text-base font-medium transition-all duration-200 rounded-lg"
+                className="text-gray-600 hover:text-gray-900 block px-4 py-3 text-base font-medium transition-all duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
