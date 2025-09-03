@@ -53,44 +53,33 @@ export default function Footer() {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Customer Care</h4>
+            <h4 className="text-lg font-semibold mb-4">Legal</h4>
             <div className="space-y-2">
+              <Link 
+                href="/privacy" 
+                className="block text-gray-600 hover:text-gray-900 transition-colors duration-200"
+              >
+                Privacy Policy
+              </Link>
+              <Link 
+                href="/terms" 
+                className="block text-gray-600 hover:text-gray-900 transition-colors duration-200"
+              >
+                Terms of Service
+              </Link>
               <a 
                 href="#" 
                 className="block text-gray-600 hover:text-gray-900 transition-colors duration-200"
               >
                 Partnership Info
               </a>
-              <a 
-                href="#" 
-                className="block text-gray-600 hover:text-gray-900 transition-colors duration-200"
-              >
-                Brand Guidelines
-              </a>
-              <a 
-                href="#" 
-                className="block text-gray-600 hover:text-gray-900 transition-colors duration-200"
-              >
-                Terms & Conditions
-              </a>
             </div>
           </div>
         </div>
-        
-        <div className="border-t border-gray-200 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
-              <div className="space-y-2 text-gray-600">
-                <p>Email: sales@shahankhalidllc.com</p>
-                <p>Phone: +1 (512) 355-5445</p>
-              </div>
-            </div>
-          </div>
-        </div>
+       
         
         <div className="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
-          <p>&copy; 2024 Shahan Khalid LLC. All rights reserved.</p>
+          <p>&copy; 2025 Shahan Khalid LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>
