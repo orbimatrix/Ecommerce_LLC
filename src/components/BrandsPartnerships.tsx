@@ -150,7 +150,7 @@ export default function BrandsPartnerships() {
               Ready to Join Our Network?
             </h3>
             <p className="text-gray-600 mb-6">
-              Whether you're a brand looking for distribution or a retailer seeking reliable wholesale partners, we're here to help you succeed.
+              Whether you&apos;re a brand looking for distribution or a retailer seeking reliable wholesale partners, we&apos;re here to help you succeed.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

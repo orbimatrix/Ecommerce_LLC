@@ -40,7 +40,7 @@ export default function Terms() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">Terms of Service Agreement</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  By accessing the website of Shahan Khalid LLC ("we," "us"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website or services.
+                  By accessing the website of Shahan Khalid LLC (&quot;we,&quot; &quot;us&quot;), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our website or services.
                 </p>
               </div>
             </div>
@@ -149,7 +149,7 @@ export default function Terms() {
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-red-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  <span className="text-gray-600">Interfering with the Site's security or functionality</span>
+                  <span className="text-gray-600">Interfering with the Site&apos;s security or functionality</span>
                 </li>
               </ul>
             </div>
@@ -169,7 +169,7 @@ export default function Terms() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-3">Disclaimer of Warranties</h4>
                   <p className="text-gray-600 text-sm leading-relaxed">
-                    This Site and all information on it are provided on an "as is" and "as available" basis without any warranties of any kind. We do not guarantee that the Site will be uninterrupted or error-free.
+                    This Site and all information on it are provided on an &quot;as is&quot; and &quot;as available&quot; basis without any warranties of any kind. We do not guarantee that the Site will be uninterrupted or error-free.
                   </p>
                 </div>
                 

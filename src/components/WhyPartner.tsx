@@ -24,7 +24,7 @@ export default function WhyPartner() {
     },
     {
       title: "Strict MAP Policy Compliance",
-      description: "We respect and rigorously enforce your Minimum Advertised Price (MAP) policies and brand guidelines. Protecting your brand's integrity, value, and positioning in the market is our top priority. You will never have to worry about us devaluing your brand through unauthorized discounting.",
+      description: "We respect and rigorously enforce your Minimum Advertised Price (MAP) policies and brand guidelines. Protecting your brand&apos;s integrity, value, and positioning in the market is our top priority. You will never have to worry about us devaluing your brand through unauthorized discounting.",
       icon: (
         <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -34,7 +34,7 @@ export default function WhyPartner() {
     },
     {
       title: "Data-Driven Growth Strategy",
-      description: "We don't just list your products; we actively manage and optimize them. Our team uses advanced analytics and Amazon-specific expertise to drive sales velocity, improve visibility, and maximize your brand's potential.",
+      description: "We don&apos;t just list your products; we actively manage and optimize them. Our team uses advanced analytics and Amazon-specific expertise to drive sales velocity, improve visibility, and maximize your brand&apos;s potential.",
       icon: (
         <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -121,7 +121,7 @@ export default function WhyPartner() {
             </h3>
             <p className="text-gray-600 mb-6">
               Join the brands that have chosen Shahan Khalid LLC as their trusted wholesale partner. 
-              Let's discuss how we can help grow your business with our proven approach to Amazon distribution.
+              Let&apos;s discuss how we can help grow your business with our proven approach to Amazon distribution.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

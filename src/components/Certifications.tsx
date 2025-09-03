@@ -156,7 +156,7 @@ export default function Certifications() {
             </h3>
             <p className="text-gray-600 mb-6">
               Contact us today to begin the verification process and discuss partnership opportunities. 
-              We're ready to provide all necessary documentation and start building a successful partnership.
+              We&apos;re ready to provide all necessary documentation and start building a successful partnership.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 

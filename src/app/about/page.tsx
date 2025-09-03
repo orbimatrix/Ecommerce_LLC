@@ -71,7 +71,7 @@ export default function About() {
                    We achieve this by leveraging deep market expertise, sophisticated data analytics, and a meticulous approach to inventory and supply chain management.
                  </p>
                  <p className="text-gray-600">
-                   We don't just move products; we build brands and foster their success in the competitive e-commerce landscape.
+                   We don&apos;t just move products; we build brands and foster their success in the competitive e-commerce landscape.
                  </p>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function About() {
               </div>
                              <h3 className="text-xl font-bold text-gray-900 mb-4">Genuine Partnerships</h3>
                <p className="text-gray-600">
-                 We view our relationships with brands not as transactions, but as true partnerships. We believe in transparent communication, collaborative planning, and protecting your brand's integrity above all else. You can trust us to be a faithful steward of your brand identity and pricing policies.
+                 We view our relationships with brands not as transactions, but as true partnerships. We believe in transparent communication, collaborative planning, and protecting your brand&apos;s integrity above all else. You can trust us to be a faithful steward of your brand identity and pricing policies.
                </p>
             </div>
 

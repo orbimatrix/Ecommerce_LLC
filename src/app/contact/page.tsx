@@ -1,9 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import Navigation from '@/components/Navigation';
-import WhyPartner from '@/components/WhyPartner';
 import Footer from '@/components/Footer';
 
 export default function Contact() {

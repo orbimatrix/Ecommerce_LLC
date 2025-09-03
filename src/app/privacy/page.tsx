@@ -40,7 +40,7 @@ export default function Privacy() {
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">Our Privacy Commitment</h2>
                 <p className="text-gray-600 leading-relaxed">
-                  Shahan Khalid LLC ("we," "us," "our") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage with us as a potential or current brand partner or customer.
+                  Shahan Khalid LLC (&quot;we,&quot; &quot;us,&quot; &quot;our&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage with us as a potential or current brand partner or customer.
                 </p>
               </div>
             </div>
