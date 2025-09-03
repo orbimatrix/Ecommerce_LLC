@@ -1,0 +1,200 @@
+/* About Us Page Specific Styles */
+
+/* Hero section with enhanced typography */
+.about-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+/* Enhanced card animations */
+.about-card {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.about-card:hover::before {
+  left: 100%;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: rgba(59, 130, 246, 0.3);
+}
+
+/* Icon animations */
+.about-card .w-16 {
+  transition: all 0.3s ease;
+}
+
+.about-card:hover .w-16 {
+  transform: scale(1.1) rotate(5deg);
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+/* Typography enhancements */
+.about-prose {
+  line-height: 1.8;
+  color: #374151;
+}
+
+.about-prose p {
+  margin-bottom: 1.5rem;
+}
+
+.about-prose p:last-child {
+  margin-bottom: 0;
+}
+
+/* Section spacing and animations */
+.about-section {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.about-section:nth-child(1) { animation-delay: 0.1s; }
+.about-section:nth-child(2) { animation-delay: 0.2s; }
+.about-section:nth-child(3) { animation-delay: 0.3s; }
+.about-section:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Enhanced gradient backgrounds */
+.about-gradient-bg {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  position: relative;
+}
+
+.about-gradient-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+}
+
+/* Call to action enhancements */
+.about-cta {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1d4ed8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive enhancements */
+@media (max-width: 768px) {
+  .about-card {
+    margin-bottom: 2rem;
+  }
+  
+  .about-prose {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-hero h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+}
+
+/* Print styles for About page */
+@media print {
+  .about-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .about-hero,
+  .about-cta {
+    background: #f8fafc !important;
+    color: #1f2937 !important;
+  }
+  
+  .about-card::before {
+    display: none;
+  }
+}
+
+/* Accessibility improvements */
+.about-card:focus-within {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .about-card {
+    border: 2px solid #000;
+  }
+  
+  .about-card:hover {
+    border-color: #3b82f6;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .about-card,
+  .about-card::before,
+  .about-card .w-16,
+  .about-section,
+  .about-cta::before {
+    animation: none;
+    transition: none;
+  }
+  
+  .about-card:hover {
+    transform: none;
+  }
+}
