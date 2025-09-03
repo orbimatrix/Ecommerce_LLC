@@ -9,12 +9,15 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center mb-4">
               <Image
-                src="/logo.svg"
+                src="/logo.png"
                 alt="Shahan Khalid LLC Logo"
-                width={150}
-                height={50}
-                className="h-10 w-auto"
+                width={200}
+                height={80}
+                className="h-16 w-auto rounded-xl"
               />
+              <div className="ml-4">
+                <h3 className="text-lg font-bold text-gray-900">SHAHAN KHALID LLC</h3>
+              </div>
             </div>
             <p className="text-gray-600 mb-4 max-w-md">
               Building bridges between premier brands and the global marketplace through professional wholesale distribution.

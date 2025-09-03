@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import WhyPartner from '@/components/WhyPartner';
 import Footer from '@/components/Footer';
 
 export default function Contact() {
@@ -101,9 +102,9 @@ export default function Contact() {
                 <div className="bg-gray-50 p-6 rounded-lg">
                   <h3 className="font-semibold text-gray-900 text-lg mb-4">Business Hours</h3>
                   <div className="space-y-2 text-gray-600">
-                    <p>Monday - Friday: 9:00 AM - 6:00 PM CST</p>
-                    <p>Saturday: 10:00 AM - 4:00 PM CST</p>
-                    <p>Sunday: Closed</p>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+                    <p>Saturday & Sunday: Closed</p>
+                   
                   </div>
                 </div>
               </div>

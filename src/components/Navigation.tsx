@@ -12,20 +12,23 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav className="bg-white/80 backdrop-blur-md shadow-lg border-b border-white/20 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+        <div className="flex justify-between items-center h-20 rounded-2xl bg-white/10 backdrop-blur-sm px-6">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-3">
               <Image
                 src="/logo.png"
                 alt="Shahan Khalid LLC Logo"
-                width={150}
-                height={50}
-                className="h-10 w-auto"
+                width={200}
+                height={80}
+                className="h-16 w-auto rounded-xl"
                 priority
               />
+              <div className="ml-4">
+                <h3 className="text-lg font-bold text-gray-900">SHAHAN KHALID LLC</h3>
+              </div>
             </Link>
           </div>
 
@@ -34,19 +37,19 @@ export default function Navigation() {
             <div className="ml-10 flex items-baseline space-x-8">
               <Link 
                 href="/#services" 
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg"
               >
                 Services
               </Link>
               <Link 
                 href="/about" 
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg"
               >
                 About
               </Link>
               <Link 
                 href="/contact" 
-                className="text-gray-600 hover:text-gray-900 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg"
               >
                 Contact
               </Link>
@@ -57,7 +60,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-colors duration-200"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-600 hover:text-gray-900 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 transition-all duration-200"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -77,24 +80,24 @@ export default function Navigation() {
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-200">
+            <div className="px-4 pt-4 pb-4 space-y-2 sm:px-6 bg-white/90 backdrop-blur-md border-t border-white/20 rounded-b-2xl mx-2">
               <Link
                 href="/#services"
-                className="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 block px-4 py-3 text-base font-medium transition-all duration-200 rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Services
               </Link>
               <Link
                 href="/about"
-                className="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 block px-4 py-3 text-base font-medium transition-all duration-200 rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/contact"
-                className="text-gray-600 hover:text-gray-900 block px-3 py-2 text-base font-medium transition-colors duration-200"
+                className="text-gray-600 hover:text-gray-900 hover:bg-white/20 block px-4 py-3 text-base font-medium transition-all duration-200 rounded-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact

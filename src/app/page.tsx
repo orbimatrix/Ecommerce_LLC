@@ -3,7 +3,8 @@ import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import ProductCategories from '@/components/ProductCategories';
 import BrandsPartnerships from '@/components/BrandsPartnerships';
-import FAQ from '@/components/FAQ';
+import Certifications from '@/components/Certifications';
+import WhyPartner from '@/components/WhyPartner';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -15,7 +16,8 @@ export default function Home() {
       <Services />
       <ProductCategories />
       <BrandsPartnerships />
-      <FAQ />
+      <Certifications />
+      <WhyPartner />
       <Footer />
     </div>
   );
