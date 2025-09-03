@@ -7,62 +7,32 @@ export default function ProductCategories() {
     {
       name: "Health & Beauty",
       description: "Personal care, cosmetics, and wellness products",
-      image: "/Health_Beauty.jpg",
-      icon: (
-        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-        </svg>
-      )
+      image: "/Health_Beauty.jpg"
     },
     {
       name: "Household Supplies",
       description: "Cleaning products, home essentials, and maintenance items",
-      image: "/household.jpg",
-      icon: (
-        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
-      )
+      image: "/household.jpg"
     },
     {
       name: "Toys & Games",
       description: "Educational toys, entertainment, and recreational products",
-      image: "/toys.jpg",
-      icon: (
-        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      )
+      image: "/toys.jpg"
     },
     {
       name: "Grocery & Food",
       description: "Food products, beverages, and consumable goods",
-      image: "/food.jpg",
-      icon: (
-        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-        </svg>
-      )
+      image: "/food.jpg"
     },
     {
       name: "Electronics & Tech",
       description: "Consumer electronics, accessories, and tech gadgets",
-      image: "/electronics.jpg",
-      icon: (
-        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-        </svg>
-      )
+      image: "/electronics.jpg"
     },
     {
       name: "Sports & Outdoors",
       description: "Fitness equipment, outdoor gear, and sporting goods",
-      image: "/sports.jpg",
-      icon: (
-        <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      )
+      image: "/sports.jpg"
     }
   ];
 
@@ -82,44 +52,28 @@ export default function ProductCategories() {
           {categories.map((category, index) => (
             <div 
               key={index}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
             >
               {/* Category Image */}
-              <div className="relative h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden">
                 <Image
                   src={category.image}
                   alt={category.name}
                   width={400}
                   height={300}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   unoptimized
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-20 h-20 bg-white bg-opacity-90 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                    {category.icon}
-                  </div>
-                </div>
               </div>
 
               {/* Category Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
                   {category.name}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
                   {category.description}
                 </p>
-              </div>
-
-              {/* Hover Effect Indicator */}
-              <div className="px-6 pb-6">
-                <div className="flex items-center text-blue-600 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span>Learn More</span>
-                  <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
               </div>
             </div>
           ))}
